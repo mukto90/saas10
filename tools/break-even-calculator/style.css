@@ -14,7 +14,7 @@
 .mode-btn:hover { border-color: var(--border-hover); color: var(--text); }
 .mode-btn.active { background: var(--accent); color: #0a0a0a; border-color: var(--accent); }
 
-.tool-grid { display: grid; grid-template-columns: 45% 55%; gap: 2rem; align-items: start; }
+.tool-grid { display: grid; grid-template-columns: 45fr 55fr; gap: 2rem; align-items: start; }
 @media (max-width: 768px) { .tool-grid { grid-template-columns: 1fr; } }
 
 .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; }

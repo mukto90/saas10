@@ -108,6 +108,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   .btn-nav:hover { opacity: 0.85; }
 
+  /* MOBILE MENU */
+  .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+  .menu-toggle span {
+    display: block; width: 22px; height: 2px; background: var(--text); margin: 5px 0;
+    transition: 0.3s;
+  }
+  .menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+  .menu-toggle.active span:nth-child(2) { opacity: 0; }
+  .menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+  @media (max-width: 640px) {
+    .menu-toggle { display: block; }
+    .nav-links {
+      position: absolute; top: 64px; left: 0; right: 0;
+      background: var(--surface); flex-direction: column;
+      padding: 1.5rem; gap: 1rem;
+      border-bottom: 1px solid var(--border);
+      display: none;
+    }
+    .nav-links.active { display: flex; }
+  }
+
   /* BUTTONS */
   .btn-primary {
     background: var(--accent);
@@ -245,6 +267,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <nav>
   <div class="nav-inner">
     <a href="/" class="logo">saas<em>10</em> <span class="logo-badge">BETA</span></a>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
     <ul class="nav-links">
       <li><a href="/#tools" <?php echo $current_page === 'index' ? 'class="active"' : ''; ?>>Tools</a></li>
       <li><a href="/about.php">About</a></li>
@@ -252,3 +277,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </ul>
   </div>
 </nav>
+<script>
+function toggleMenu() {
+  document.querySelector('.nav-links').classList.toggle('active');
+  document.querySelector('.menu-toggle').classList.toggle('active');
+}
+</script>
