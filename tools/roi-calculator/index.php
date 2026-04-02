@@ -10,7 +10,6 @@ include '../../header.php';
     <a href="/" class="back-link">← All tools</a>
     
     <div class="page-header">
-      <div class="tag">// roi calculator</div>
       <h1>ROI Calculator</h1>
       <p>Calculate ROI for any SaaS tool or business spend with projections.</p>
     </div>
