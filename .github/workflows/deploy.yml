@@ -1,0 +1,26 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync to server
+        run: |
+          rsync -avz --progress \
+            --exclude='requirements' \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='LLM.md' \
+            -e "ssh -i ${{ secrets.CXD_PRIVATE_KEY }} -o StrictHostKeyChecking=no" \
+            ./ \
+            root@${{ secrets.CXD_SERVER_IP }}:/var/www/html/saas10.xyz/
