@@ -240,7 +240,7 @@ include 'header.php';
         </div>
         <div class="tool-name">ROI Calculator</div>
         <div class="tool-desc">Estimate return on investment for any SaaS tool or campaign spend in seconds.</div>
-        <div class="tool-url">./tools/roi-calculator</div>
+        <div class="tool-url">/tools/roi-calculator</div>
         <span class="tool-arrow">↗</span>
       </a>
 
@@ -251,7 +251,7 @@ include 'header.php';
         </div>
         <div class="tool-name">MRR / ARR Calculator</div>
         <div class="tool-desc">Calculate monthly and annual recurring revenue across all your pricing tiers.</div>
-        <div class="tool-url">./tools/mrr-calculator</div>
+        <div class="tool-url">/tools/mrr-calculator</div>
         <span class="tool-arrow">↗</span>
       </a>
 
@@ -262,7 +262,7 @@ include 'header.php';
         </div>
         <div class="tool-name">Churn Rate Calculator</div>
         <div class="tool-desc">Know exactly how much revenue and how many customers you're losing each month.</div>
-        <div class="tool-url">./tools/churn-rate-calculator</div>
+        <div class="tool-url">/tools/churn-rate-calculator</div>
         <span class="tool-arrow">↗</span>
       </a>
 
@@ -273,7 +273,7 @@ include 'header.php';
         </div>
         <div class="tool-name">LTV:CAC Ratio Calculator</div>
         <div class="tool-desc">Find out if your customer acquisition cost is sustainable enough for the long run.</div>
-        <div class="tool-url">./tools/ltv-cac-calculator</div>
+        <div class="tool-url">/tools/ltv-cac-calculator</div>
         <span class="tool-arrow">↗</span>
       </a>
 
