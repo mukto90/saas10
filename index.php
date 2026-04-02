@@ -233,7 +233,7 @@ include 'header.php';
     </div>
     <div class="tools-grid">
 
-      <a href="/tools/roi-calculator" class="tool-card">
+      <a href="./tools/roi-calculator" class="tool-card">
         <span class="tool-badge badge-new">NEW</span>
         <div class="tool-icon green">
           <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M2 12L6 7L9 10L12 5L14 8" stroke="#c8f060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -244,7 +244,7 @@ include 'header.php';
         <span class="tool-arrow">↗</span>
       </a>
 
-      <a href="/tools/mrr-arr-calculator" class="tool-card">
+      <a href="./tools/mrr-arr-calculator" class="tool-card">
         <span class="tool-badge badge-new">NEW</span>
         <div class="tool-icon green">
           <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" stroke="#c8f060" stroke-width="1.5"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="#c8f060" stroke-width="1.5"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="#c8f060" stroke-width="1.5"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="#c8f060" stroke-width="1.5"/></svg>
@@ -255,7 +255,7 @@ include 'header.php';
         <span class="tool-arrow">↗</span>
       </a>
 
-      <a href="/tools/churn-rate-calculator" class="tool-card">
+      <a href="./tools/churn-rate-calculator" class="tool-card">
         <span class="tool-badge badge-new">NEW</span>
         <div class="tool-icon blue">
           <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5.5" stroke="#60d4f0" stroke-width="1.5"/><path d="M8 5v3l2 2" stroke="#60d4f0" stroke-width="1.5" stroke-linecap="round"/></svg>
@@ -266,7 +266,7 @@ include 'header.php';
         <span class="tool-arrow">↗</span>
       </a>
 
-      <a href="/tools/ltv-cac-ratio-calculator" class="tool-card">
+      <a href="./tools/ltv-cac-ratio-calculator" class="tool-card">
         <span class="tool-badge badge-new">NEW</span>
         <div class="tool-icon blue">
           <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 13V6M7 13V3M11 13V8M15 13V11" stroke="#60d4f0" stroke-width="1.5" stroke-linecap="round"/></svg>
