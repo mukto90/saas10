@@ -207,7 +207,7 @@ include 'header.php';
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat">
-      <div class="stat-num">12<span>+</span></div>
+      <div class="stat-num">6<span>+</span></div>
       <div class="stat-label">Free Tools</div>
     </div>
     <div class="stat">
@@ -215,7 +215,7 @@ include 'header.php';
       <div class="stat-label">No login</div>
     </div>
     <div class="stat">
-      <div class="stat-num">0<span>$</span></div>
+      <div class="stat-num">0.0<span>$</span></div>
       <div class="stat-label">Forever free</div>
     </div>
     <div class="stat">
@@ -240,62 +240,62 @@ include 'header.php';
         </div>
         <div class="tool-name">ROI Calculator</div>
         <div class="tool-desc">Estimate return on investment for any SaaS tool or campaign spend in seconds.</div>
-        <div class="tool-url">saas10.xyz/tools/roi-calculator</div>
+        <div class="tool-url">./tools/roi-calculator</div>
         <span class="tool-arrow">↗</span>
       </a>
 
-      <a href="/tools/mrr-calculator" class="tool-card">
+      <a href="/tools/mrr-arr-calculator" class="tool-card">
         <span class="tool-badge badge-new">NEW</span>
         <div class="tool-icon green">
           <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" stroke="#c8f060" stroke-width="1.5"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="#c8f060" stroke-width="1.5"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="#c8f060" stroke-width="1.5"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="#c8f060" stroke-width="1.5"/></svg>
         </div>
         <div class="tool-name">MRR / ARR Calculator</div>
         <div class="tool-desc">Calculate monthly and annual recurring revenue across all your pricing tiers.</div>
-        <div class="tool-url">saas10.xyz/tools/mrr-calculator</div>
+        <div class="tool-url">./tools/mrr-calculator</div>
         <span class="tool-arrow">↗</span>
       </a>
 
-      <a href="/tools/churn-calculator" class="tool-card">
+      <a href="/tools/churn-rate-calculator" class="tool-card">
         <span class="tool-badge badge-new">NEW</span>
         <div class="tool-icon blue">
           <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5.5" stroke="#60d4f0" stroke-width="1.5"/><path d="M8 5v3l2 2" stroke="#60d4f0" stroke-width="1.5" stroke-linecap="round"/></svg>
         </div>
         <div class="tool-name">Churn Rate Calculator</div>
         <div class="tool-desc">Know exactly how much revenue and how many customers you're losing each month.</div>
-        <div class="tool-url">saas10.xyz/tools/churn-calculator</div>
+        <div class="tool-url">./tools/churn-rate-calculator</div>
         <span class="tool-arrow">↗</span>
       </a>
 
-      <a href="/ltv-cac" class="tool-card">
-        <span class="tool-badge badge-soon">SOON</span>
+      <a href="/tools/ltv-cac-ratio-calculator" class="tool-card">
+        <span class="tool-badge badge-new">NEW</span>
         <div class="tool-icon blue">
           <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 13V6M7 13V3M11 13V8M15 13V11" stroke="#60d4f0" stroke-width="1.5" stroke-linecap="round"/></svg>
         </div>
         <div class="tool-name">LTV:CAC Ratio Calculator</div>
-        <div class="tool-desc">Find out if your customer acquisition cost is sustainable for the long run.</div>
-        <div class="tool-url">saas10.xyz/ltv-cac</div>
+        <div class="tool-desc">Find out if your customer acquisition cost is sustainable enough for the long run.</div>
+        <div class="tool-url">./tools/ltv-cac-calculator</div>
         <span class="tool-arrow">↗</span>
       </a>
 
-      <a href="/cold-email" class="tool-card">
+      <a href="#" class="tool-card">
         <span class="tool-badge badge-soon">SOON</span>
         <div class="tool-icon purple">
           <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M4 8h8M6 12h4" stroke="#a082f0" stroke-width="1.5" stroke-linecap="round"/></svg>
         </div>
         <div class="tool-name">Cold Email Generator</div>
         <div class="tool-desc">AI-written cold emails for SaaS outreach. Personalized and actually worth reading.</div>
-        <div class="tool-url">saas10.xyz/cold-email</div>
+        <div class="tool-url">saas10.xyz</div>
         <span class="tool-arrow">↗</span>
       </a>
 
-      <a href="/idea-validator" class="tool-card">
+      <a href="#" class="tool-card">
         <span class="tool-badge badge-soon">SOON</span>
         <div class="tool-icon orange">
           <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5.5" stroke="#f0a050" stroke-width="1.5"/><path d="M8 5v3" stroke="#f0a050" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="11" r="0.75" fill="#f0a050"/></svg>
         </div>
         <div class="tool-name">SaaS Idea Validator</div>
         <div class="tool-desc">Score your SaaS idea against market demand, competition, and monetization signals.</div>
-        <div class="tool-url">saas10.xyz/idea-validator</div>
+        <div class="tool-url">saas10.xyz</div>
         <span class="tool-arrow">↗</span>
       </a>
 
