@@ -251,7 +251,7 @@ include 'header.php';
         </div>
         <div class="tool-name">MRR / ARR Calculator</div>
         <div class="tool-desc">Calculate monthly and annual recurring revenue across all your pricing tiers.</div>
-        <div class="tool-url">/tools/mrr-calculator</div>
+        <div class="tool-url">/tools/mrr-arr-calculator</div>
         <span class="tool-arrow">↗</span>
       </a>
 
@@ -273,7 +273,7 @@ include 'header.php';
         </div>
         <div class="tool-name">LTV:CAC Ratio Calculator</div>
         <div class="tool-desc">Find out if your customer acquisition cost is sustainable enough for the long run.</div>
-        <div class="tool-url">/tools/ltv-cac-calculator</div>
+        <div class="tool-url">/tools/ltv-cac-ratio-calculator</div>
         <span class="tool-arrow">↗</span>
       </a>
 
