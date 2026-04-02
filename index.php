@@ -207,7 +207,7 @@ include 'header.php';
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat">
-      <div class="stat-num">10<span>+</span></div>
+      <div class="stat-num">16<span>+</span></div>
       <div class="stat-label">Free Tools</div>
     </div>
     <div class="stat">
@@ -318,6 +318,72 @@ include 'header.php';
         <div class="tool-name">SaaS Fundraising Calculator</div>
         <div class="tool-desc">Model your raise — dilution, ARR multiples, and cap table — before you walk into the room.</div>
         <div class="tool-url">/tools/fundraising-calculator</div>
+        <span class="tool-arrow">↗</span>
+      </a>
+
+      <a href="./tools/rule-of-40" class="tool-card">
+        <span class="tool-badge badge-new">NEW</span>
+        <div class="tool-icon green">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5.5" stroke="#c8f060" stroke-width="1.5"/><path d="M8 5v3l2 2" stroke="#c8f060" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="tool-name">Rule of 40 Calculator</div>
+        <div class="tool-desc">Measure the balance between growth and profitability — the key SaaS health metric.</div>
+        <div class="tool-url">/tools/rule-of-40</div>
+        <span class="tool-arrow">↗</span>
+      </a>
+
+      <a href="./tools/saas-valuation" class="tool-card">
+        <span class="tool-badge badge-new">NEW</span>
+        <div class="tool-icon green">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 13V6M7 13V3M11 13V8M15 13V11" stroke="#c8f060" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="tool-name">SaaS Valuation Calculator</div>
+        <div class="tool-desc">Estimate your company's worth using ARR multiples, DCF, and comparable transactions.</div>
+        <div class="tool-url">/tools/saas-valuation</div>
+        <span class="tool-arrow">↗</span>
+      </a>
+
+      <a href="./tools/revenue-per-employee" class="tool-card">
+        <span class="tool-badge badge-new">NEW</span>
+        <div class="tool-icon blue">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" stroke="#60d4f0" stroke-width="1.5"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="#60d4f0" stroke-width="1.5"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="#60d4f0" stroke-width="1.5"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="#60d4f0" stroke-width="1.5"/></svg>
+        </div>
+        <div class="tool-name">Revenue Per Employee</div>
+        <div class="tool-desc">Measure team efficiency and benchmark against top SaaS companies.</div>
+        <div class="tool-url">/tools/revenue-per-employee</div>
+        <span class="tool-arrow">↗</span>
+      </a>
+
+      <a href="./tools/saas-pricing-calculator" class="tool-card">
+        <span class="tool-badge badge-new">NEW</span>
+        <div class="tool-icon blue">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M2 12L6 7L9 10L12 5L14 8" stroke="#60d4f0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="tool-name">SaaS Pricing Calculator</div>
+        <div class="tool-desc">Find the optimal price point based on costs, value, and competitive positioning.</div>
+        <div class="tool-url">/tools/saas-pricing-calculator</div>
+        <span class="tool-arrow">↗</span>
+      </a>
+
+      <a href="./tools/price-increase-simulator" class="tool-card">
+        <span class="tool-badge badge-new">NEW</span>
+        <div class="tool-icon purple">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5.5" stroke="#a082f0" stroke-width="1.5"/><path d="M8 5v3l2 2" stroke="#a082f0" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="tool-name">Price Increase Simulator</div>
+        <div class="tool-desc">Model the financial impact of raising prices and see how much churn you can absorb.</div>
+        <div class="tool-url">/tools/price-increase-simulator</div>
+        <span class="tool-arrow">↗</span>
+      </a>
+
+      <a href="./tools/sales-capacity-planner" class="tool-card">
+        <span class="tool-badge badge-new">NEW</span>
+        <div class="tool-icon purple">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 13V6M7 13V3M11 13V8M15 13V11" stroke="#a082f0" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="tool-name">Sales Capacity Planner</div>
+        <div class="tool-desc">Determine how many salespeople you need to hit your ARR target.</div>
+        <div class="tool-url">/tools/sales-capacity-planner</div>
         <span class="tool-arrow">↗</span>
       </a>
 
