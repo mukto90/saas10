@@ -26,11 +26,11 @@ include '../../header.php';
         <div class="input-section">
           <div class="section-title">Customer Churn</div>
           <div class="input-group">
-            <label>Customers (Start of Month)</label>
+            <label>Customers (Start of Month) <span class="term-tooltip">?<span class="tooltip-text">Total number of customers at the beginning of the month</span></span></label>
             <input type="number" id="customersStart" value="500" min="0" max="9999999" step="1">
           </div>
           <div class="input-group">
-            <label>Customers Lost This Month</label>
+            <label>Customers Lost This Month <span class="term-tooltip">?<span class="tooltip-text">Number of customers who cancelled their subscription this month</span></span></label>
             <input type="number" id="customersLost" value="25" min="0" max="9999999" step="1">
           </div>
         </div>
@@ -38,11 +38,11 @@ include '../../header.php';
         <div class="input-section">
           <div class="section-title">Revenue Churn</div>
           <div class="input-group">
-            <label>MRR (Start of Month) ($)</label>
+            <label>MRR (Start of Month) ($) <span class="term-tooltip">?<span class="tooltip-text">Monthly Recurring Revenue at the start of the month</span></span></label>
             <input type="number" id="mrrStart" value="25000" min="0" max="9999999" step="1">
           </div>
           <div class="input-group">
-            <label>MRR Lost This Month ($)</label>
+            <label>MRR Lost This Month ($) <span class="term-tooltip">?<span class="tooltip-text">Revenue lost from customers who cancelled or downgraded</span></span></label>
             <input type="number" id="mrrLost" value="1000" min="0" max="9999999" step="1">
           </div>
         </div>
@@ -51,23 +51,23 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">Churn Breakdown</div>
             <div class="input-group">
-              <label>Voluntary Churn (Customers)</label>
+              <label>Voluntary Churn (Customers) <span class="term-tooltip">?<span class="tooltip-text">Customers who actively chose to cancel their subscription</span></span></label>
               <input type="number" id="voluntaryChurn" value="0" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Involuntary Churn (Customers)</label>
+              <label>Involuntary Churn (Customers) <span class="term-tooltip">?<span class="tooltip-text">Customers lost due to failed payments or payment issues</span></span></label>
               <input type="number" id="involuntaryChurn" value="0" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Expansion MRR ($)</label>
+              <label>Expansion MRR ($) <span class="term-tooltip">?<span class="tooltip-text">Additional revenue from existing customers upgrading or adding features</span></span></label>
               <input type="number" id="expansionMrr" value="0" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Contraction MRR ($)</label>
+              <label>Contraction MRR ($) <span class="term-tooltip">?<span class="tooltip-text">Revenue lost from customers downgrading to lower plans</span></span></label>
               <input type="number" id="contractionMrr" value="0" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>New MRR ($)</label>
+              <label>New MRR ($) <span class="term-tooltip">?<span class="tooltip-text">Revenue from new customers acquired this month</span></span></label>
               <input type="number" id="newMrr" value="0" min="0" max="9999999" step="1">
             </div>
           </div>
@@ -111,12 +111,12 @@ include '../../header.php';
         
         <div class="results-grid">
           <div class="result-metric">
-            <div class="label">Customer Churn Rate <span class="health-badge" id="customerChurnBadge"></span></div>
+            <div class="label">Customer Churn Rate <span class="term-tooltip">?<span class="tooltip-text">Churn Rate: Percentage of customers who cancel their subscription in a given period</span></span> <span class="health-badge" id="customerChurnBadge"></span></div>
             <div class="value" id="customerChurnRate">5.00%</div>
             <div class="interpretation" id="customerChurnInterpretation"></div>
           </div>
           <div class="result-metric">
-            <div class="label">Revenue Churn Rate <span class="health-badge" id="revenueChurnBadge"></span></div>
+            <div class="label">Revenue Churn Rate <span class="term-tooltip">?<span class="tooltip-text">Revenue Churn Rate: Percentage of monthly recurring revenue lost due to cancellations and downgrades</span></span> <span class="health-badge" id="revenueChurnBadge"></span></div>
             <div class="value" id="revenueChurnRate">4.00%</div>
           </div>
           <div class="result-metric">
@@ -124,11 +124,11 @@ include '../../header.php';
             <div class="value" id="customersRemaining">475</div>
           </div>
           <div class="result-metric">
-            <div class="label">MRR Remaining</div>
+            <div class="label">MRR Remaining <span class="term-tooltip">?<span class="tooltip-text">MRR: Monthly Recurring Revenue - predictable revenue generated each month from subscriptions</span></span></div>
             <div class="value" id="mrrRemaining">$24,000</div>
           </div>
           <div class="result-metric">
-            <div class="label">Avg Revenue per Churned Customer</div>
+            <div class="label">Avg Revenue per Churned Customer <span class="term-tooltip">?<span class="tooltip-text">AR PCC: Average revenue lost from each customer who churns</span></span></div>
             <div class="value" id="arpcc">$40.00</div>
           </div>
         </div>
@@ -136,27 +136,27 @@ include '../../header.php';
         <div class="advanced-results" style="display: none;">
           <div class="results-row">
             <div class="result-metric">
-              <div class="label">Voluntary Churn Rate</div>
+              <div class="label">Voluntary Churn Rate <span class="term-tooltip">?<span class="tooltip-text">Voluntary Churn: Customers who actively choose to cancel their subscription</span></span></div>
               <div class="value" id="voluntaryChurnRate">0.00%</div>
             </div>
             <div class="result-metric">
-              <div class="label">Involuntary Churn Rate</div>
+              <div class="label">Involuntary Churn Rate <span class="term-tooltip">?<span class="tooltip-text">Involuntary Churn: Customers lost due to failed payments or payment issues</span></span></div>
               <div class="value" id="involuntaryChurnRate">0.00%</div>
             </div>
           </div>
           <div class="results-row">
             <div class="result-metric">
-              <div class="label">Gross Revenue Retention</div>
+              <div class="label">Gross Revenue Retention <span class="term-tooltip">?<span class="tooltip-text">GRR: Percentage of revenue retained from existing customers, excluding expansion</span></span></div>
               <div class="value" id="grr">96.00%</div>
             </div>
             <div class="result-metric">
-              <div class="label">Net Revenue Retention <span class="health-badge" id="nrrBadge"></span></div>
+              <div class="label">Net Revenue Retention <span class="term-tooltip">?<span class="tooltip-text">NRR: Revenue retained including expansion revenue minus churn and contraction</span></span> <span class="health-badge" id="nrrBadge"></span></div>
               <div class="value" id="nrr">96.00%</div>
             </div>
           </div>
           <div class="results-row">
             <div class="result-metric">
-              <div class="label">MRR Movements Net</div>
+              <div class="label">MRR Movements Net <span class="term-tooltip">?<span class="tooltip-text">Net MRR: Total change in monthly recurring revenue from all movements</span></span></div>
               <div class="value" id="mrrMovementsNet">$800</div>
             </div>
             <div class="result-metric">

@@ -24,17 +24,17 @@ include '../../header.php';
         <div class="card-label">Your Inputs</div>
         
         <div class="input-group">
-          <label>Cash in Bank ($)</label>
+          <label>Cash in Bank ($) <span class="term-tooltip">?<span class="tooltip-text">Cash in Bank: Total cash reserves available to the business</span></span></label>
           <input type="number" id="cashInBank" value="500000" min="0" max="999999999" step="1">
         </div>
         
         <div class="input-group">
-          <label>Monthly Gross Burn ($)</label>
+          <label>Monthly Gross Burn ($) <span class="term-tooltip">?<span class="tooltip-text">Gross Burn: Total monthly operating expenses before revenue</span></span></label>
           <input type="number" id="grossBurn" value="40000" min="0" max="9999999" step="1">
         </div>
         
         <div class="input-group">
-          <label>Monthly Revenue ($)</label>
+          <label>Monthly Revenue ($) <span class="term-tooltip">?<span class="tooltip-text">Monthly Revenue: Total monthly recurring revenue</span></span></label>
           <input type="number" id="monthlyRevenue" value="10000" min="0" max="9999999" step="1">
         </div>
 
@@ -42,27 +42,27 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">Cost Breakdown</div>
             <div class="input-group">
-              <label>Salaries & Contractors ($/mo)</label>
+              <label>Salaries & Contractors ($/mo) <span class="term-tooltip">?<span class="tooltip-text">Total monthly cost for all employee salaries and contractor payments</span></span></label>
               <input type="number" id="salaries" value="25000" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Infrastructure & Hosting ($/mo)</label>
+              <label>Infrastructure & Hosting ($/mo) <span class="term-tooltip">?<span class="tooltip-text">Costs for servers, cloud services, hosting, and technical infrastructure</span></span></label>
               <input type="number" id="infrastructure" value="3000" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Marketing & Ads ($/mo)</label>
+              <label>Marketing & Ads ($/mo) <span class="term-tooltip">?<span class="tooltip-text">Spending on advertising, marketing campaigns, and lead generation</span></span></label>
               <input type="number" id="marketing" value="5000" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Tools & Subscriptions ($/mo)</label>
+              <label>Tools & Subscriptions ($/mo) <span class="term-tooltip">?<span class="tooltip-text">Software subscriptions, SaaS tools, and business services</span></span></label>
               <input type="number" id="tools" value="2000" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Office & Operations ($/mo)</label>
+              <label>Office & Operations ($/mo) <span class="term-tooltip">?<span class="tooltip-text">Rent, utilities, office supplies, and operational expenses</span></span></label>
               <input type="number" id="office" value="2000" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Other Expenses ($/mo)</label>
+              <label>Other Expenses ($/mo) <span class="term-tooltip">?<span class="tooltip-text">Miscellaneous business expenses not categorized above</span></span></label>
               <input type="number" id="other" value="3000" min="0" max="9999999" step="1">
             </div>
             <div class="reconciliation-note" id="reconNote" style="display: none;"></div>
@@ -87,15 +87,15 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">Revenue Growth</div>
             <div class="input-group">
-              <label>Monthly Revenue Growth (%)</label>
+              <label>Monthly Revenue Growth (%) <span class="term-tooltip">?<span class="tooltip-text">Expected month-over-month revenue growth rate</span></span></label>
               <input type="number" id="revenueGrowth" value="0" min="-50" max="200" step="0.1">
             </div>
             <div class="input-group">
-              <label>Expected Cash Injection ($)</label>
+              <label>Expected Cash Injection ($) <span class="term-tooltip">?<span class="tooltip-text">One-time cash influx from fundraising, grants, or other sources</span></span></label>
               <input type="number" id="cashInjection" value="0" min="0" max="999999999" step="1">
             </div>
             <div class="input-group">
-              <label>Injection Arrives in Month #</label>
+              <label>Injection Arrives in Month # <span class="term-tooltip">?<span class="tooltip-text">Month from now when the cash injection will be received</span></span></label>
               <input type="number" id="injectionMonth" value="1" min="1" max="36" step="1">
             </div>
           </div>
@@ -124,11 +124,11 @@ include '../../header.php';
         
         <div class="results-grid">
           <div class="result-metric">
-            <div class="label">Monthly Net Burn</div>
+            <div class="label">Monthly Net Burn <span class="term-tooltip">?<span class="tooltip-text">Net Burn: Monthly expenses minus revenue (positive = burning cash, negative = profitable)</span></span></div>
             <div class="value" id="netBurn">$30,000</div>
           </div>
           <div class="result-metric" id="runwayContainer">
-            <div class="label">Runway <span class="health-badge" id="runwayBadge">Comfortable</span></div>
+            <div class="label">Runway <span class="health-badge" id="runwayBadge">Comfortable</span> <span class="term-tooltip">?<span class="tooltip-text">Runway: Number of months until cash runs out at current burn rate</span></span></div>
             <div class="value" id="runwayValue">16.7 months</div>
             <div class="sub" id="runwaySub">Runway ends: Jul 2027</div>
           </div>

@@ -85,3 +85,43 @@
 .explanation-content { display: none; margin-top: 1rem; padding: 1.25rem; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; font-size: 0.9rem; line-height: 1.7; color: var(--muted); }
 .explanation-content.open { display: block; }
 .explanation-content p { margin-bottom: 0.5rem; }
+
+.term-tooltip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--border);
+  color: var(--muted);
+  font-size: 0.65rem;
+  font-weight: 600;
+  cursor: help;
+  margin-left: 4px;
+  position: relative;
+}
+.term-tooltip:hover { background: var(--accent); color: #0a0a0a; }
+.term-tooltip .tooltip-text {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text);
+  white-space: nowrap;
+  z-index: 100;
+  margin-bottom: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  line-height: 1.4;
+}
+.term-tooltip:hover .tooltip-text { display: block; }
+
+.result-metric .label { display: flex; align-items: center; }
+.input-group label { display: flex; align-items: center; }

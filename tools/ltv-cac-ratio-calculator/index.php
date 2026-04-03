@@ -26,19 +26,19 @@ include '../../header.php';
         <div class="input-section">
           <div class="section-title">Core Metrics</div>
           <div class="input-group">
-            <label>Monthly ARPU ($)</label>
+            <label>Monthly ARPU ($) <span class="term-tooltip">?<span class="tooltip-text">ARPU: Average Revenue Per User - the average monthly revenue generated from each customer</span></span></label>
             <input type="number" id="arpu" value="99" min="0" max="9999999" step="0.01">
           </div>
           <div class="input-group">
-            <label>Gross Margin (%)</label>
+            <label>Gross Margin (%) <span class="term-tooltip">?<span class="tooltip-text">Gross Margin: Percentage of revenue remaining after deducting direct costs of goods sold</span></span></label>
             <input type="number" id="grossMargin" value="80" min="0" max="100" step="0.1">
           </div>
           <div class="input-group">
-            <label>Monthly Churn Rate (%)</label>
+            <label>Monthly Churn Rate (%) <span class="term-tooltip">?<span class="tooltip-text">Churn Rate: Percentage of customers who cancel their subscription each month</span></span></label>
             <input type="number" id="churnRate" value="2" min="0" max="100" step="0.01">
           </div>
           <div class="input-group">
-            <label>CAC ($)</label>
+            <label>CAC ($) <span class="term-tooltip">?<span class="tooltip-text">CAC: Customer Acquisition Cost - total cost to acquire a new customer</span></span></label>
             <input type="number" id="cac" value="500" min="0" max="9999999" step="1">
           </div>
         </div>
@@ -47,11 +47,11 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">Revenue Adjustments</div>
             <div class="input-group">
-              <label>Expansion MRR per Customer ($)</label>
+              <label>Expansion MRR per Customer ($) <span class="term-tooltip">?<span class="tooltip-text">Expansion MRR: Additional revenue from existing customers through upgrades or add-ons</span></span></label>
               <input type="number" id="expansionMrr" value="0" min="0" max="9999999" step="0.01">
             </div>
             <div class="input-group">
-              <label>Monthly Support Cost per Customer ($)</label>
+              <label>Monthly Support Cost per Customer ($) <span class="term-tooltip">?<span class="tooltip-text">Support Cost: Direct cost of providing customer support per customer per month</span></span></label>
               <input type="number" id="supportCost" value="0" min="0" max="9999999" step="0.01">
             </div>
           </div>
@@ -59,7 +59,7 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">LTV Discounting</div>
             <div class="input-group">
-              <label>Discount Rate (%) — your cost of capital</label>
+              <label>Discount Rate (%) — your cost of capital <span class="term-tooltip">?<span class="tooltip-text">Discount Rate: Your cost of capital used to calculate present value of future cash flows</span></span></label>
               <input type="number" id="discountRate" value="0" min="0" max="30" step="0.1">
             </div>
           </div>
@@ -109,31 +109,31 @@ include '../../header.php';
         
         <div class="results-grid">
           <div class="result-metric">
-            <div class="label">Customer Lifetime</div>
+            <div class="label">Customer Lifetime <span class="term-tooltip">?<span class="tooltip-text">Customer Lifetime: Average number of months a customer stays before churning</span></span></div>
             <div class="value" id="customerLifetime">50.0 months</div>
           </div>
           <div class="result-metric">
-            <div class="label">LTV</div>
+            <div class="label">LTV <span class="term-tooltip">?<span class="tooltip-text">LTV: Lifetime Value - total revenue expected from a customer over their entire relationship</span></span></div>
             <div class="value" id="ltv">$3,960</div>
           </div>
           <div class="result-metric">
-            <div class="label">CAC</div>
+            <div class="label">CAC <span class="term-tooltip">?<span class="tooltip-text">CAC: Customer Acquisition Cost - total cost to acquire a new customer</span></span></div>
             <div class="value" id="cacResult">$500</div>
           </div>
           <div class="result-metric" id="ratioContainer">
-            <div class="label">LTV:CAC Ratio <span class="health-badge" id="ratioBadge">Healthy</span></div>
+            <div class="label">LTV:CAC Ratio <span class="health-badge" id="ratioBadge">Healthy</span> <span class="term-tooltip">?<span class="tooltip-text">LTV:CAC Ratio: Measures how much lifetime value you get for each dollar spent on acquisition. A ratio of 3:1 or higher is considered healthy.</span></span></div>
             <div class="value" id="ratio">7.9</div>
           </div>
         </div>
 
         <div class="results-row">
           <div class="result-metric" id="paybackContainer">
-            <div class="label">CAC Payback Period</div>
+            <div class="label">CAC Payback Period <span class="term-tooltip">?<span class="tooltip-text">CAC Payback Period: Number of months required to recover the cost of acquiring a customer through their revenue</span></span></div>
             <div class="value" id="payback">6.3 months</div>
             <div class="sub" id="paybackNote">Healthy payback window for most SaaS businesses.</div>
           </div>
           <div class="result-metric">
-            <div class="label">Monthly Gross Profit</div>
+            <div class="label">Monthly Gross Profit <span class="term-tooltip">?<span class="tooltip-text">Monthly Gross Profit: Revenue minus direct costs per customer per month</span></span></div>
             <div class="value" id="grossProfit">$79.20</div>
           </div>
         </div>
@@ -141,21 +141,21 @@ include '../../header.php';
         <div class="advanced-results" style="display: none;">
           <div class="results-row">
             <div class="result-metric">
-              <div class="label">Adjusted LTV</div>
+              <div class="label">Adjusted LTV <span class="term-tooltip">?<span class="tooltip-text">Adjusted LTV: Lifetime Value factoring in expansion revenue and support costs</span></span></div>
               <div class="value" id="adjustedLtv">$3,960</div>
             </div>
             <div class="result-metric">
-              <div class="label">Discounted LTV</div>
+              <div class="label">Discounted LTV <span class="term-tooltip">?<span class="tooltip-text">Discounted LTV: Present value of future cash flows using your discount rate</span></span></div>
               <div class="value" id="discountedLtv">$3,960</div>
             </div>
           </div>
           <div class="results-row">
             <div class="result-metric">
-              <div class="label">LTV:CAC (Discounted)</div>
+              <div class="label">LTV:CAC (Discounted) <span class="term-tooltip">?<span class="tooltip-text">LTV:CAC (Discounted): Ratio using discounted LTV to account for time value of money</span></span></div>
               <div class="value" id="ratioDiscounted">7.9</div>
             </div>
             <div class="result-metric">
-              <div class="label">Annual LTV</div>
+              <div class="label">Annual LTV <span class="term-tooltip">?<span class="tooltip-text">Annual LTV: Total value generated by a customer over a 12-month period</span></span></div>
               <div class="value" id="annualLtv">$47,520</div>
             </div>
           </div>

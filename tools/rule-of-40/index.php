@@ -24,17 +24,17 @@ include '../../header.php';
         <div class="card-label">Your Inputs</div>
         
         <div class="input-group">
-          <label>ARR Growth Rate YoY (%)</label>
+          <label>ARR Growth Rate YoY (%) <span class="term-tooltip">?<span class="tooltip-text">Year-over-year growth rate of Annual Recurring Revenue</span></span></label>
           <input type="number" id="growthRate" value="80" min="-100" max="1000" step="0.1">
         </div>
         
         <div class="input-group">
-          <label>Profit Margin (%)</label>
+          <label>Profit Margin (%) <span class="term-tooltip">?<span class="tooltip-text">Profit Margin: Percentage of revenue remaining as profit (can be negative)</span></span></label>
           <input type="number" id="profitMargin" value="-20" min="-200" max="100" step="0.1">
         </div>
         
         <div class="input-group">
-          <label>Margin Type</label>
+          <label>Margin Type <span class="term-tooltip">?<span class="tooltip-text">Type of profit margin calculation (EBITDA, FCF, Net, or Operating)</span></span></label>
           <select id="marginType">
             <option value="EBITDA" selected>EBITDA Margin</option>
             <option value="FCF">Free Cash Flow Margin</option>
@@ -47,11 +47,11 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">ARR Inputs</div>
             <div class="input-group">
-              <label>ARR — 12 Months Ago ($)</label>
+              <label>ARR — 12 Months Ago ($) <span class="term-tooltip">?<span class="tooltip-text">Your ARR from 12 months ago for calculating growth rate</span></span></label>
               <input type="number" id="arrPrev" value="1000000" min="0" max="999999999" step="1">
             </div>
             <div class="input-group">
-              <label>Current ARR ($)</label>
+              <label>Current ARR ($) <span class="term-tooltip">?<span class="tooltip-text">ARR: Annual Recurring Revenue - your total yearly subscription revenue</span></span></label>
               <input type="number" id="arrCurrent" value="1800000" min="0" max="999999999" step="1">
             </div>
           </div>
@@ -59,23 +59,23 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">P&L — TTM</div>
             <div class="input-group">
-              <label>Total Revenue — TTM ($)</label>
+              <label>Total Revenue — TTM ($) <span class="term-tooltip">?<span class="tooltip-text">TTM: Trailing Twelve Months - total revenue over the last 12 months</span></span></label>
               <input type="number" id="totalRevenue" value="1500000" min="0" max="999999999" step="1">
             </div>
             <div class="input-group">
-              <label>COGS ($)</label>
+              <label>COGS ($) <span class="term-tooltip">?<span class="tooltip-text">COGS: Cost of Goods Sold - direct costs of producing your product</span></span></label>
               <input type="number" id="cogs" value="300000" min="0" max="999999999" step="1">
             </div>
             <div class="input-group">
-              <label>Sales & Marketing ($)</label>
+              <label>Sales & Marketing ($) <span class="term-tooltip">?<span class="tooltip-text">S&M expenses - costs of sales team and marketing activities</span></span></label>
               <input type="number" id="salesMarketing" value="450000" min="0" max="999999999" step="1">
             </div>
             <div class="input-group">
-              <label>R&D / Engineering ($)</label>
+              <label>R&D / Engineering ($) <span class="term-tooltip">?<span class="tooltip-text">R&D: Research and Development - costs of building and improving your product</span></span></label>
               <input type="number" id="rd" value="400000" min="0" max="999999999" step="1">
             </div>
             <div class="input-group">
-              <label>General & Administrative ($)</label>
+              <label>General & Administrative ($) <span class="term-tooltip">?<span class="tooltip-text">G&A: Overhead costs not directly tied to product or sales</span></span></label>
               <input type="number" id="ga" value="200000" min="0" max="999999999" step="1">
             </div>
           </div>

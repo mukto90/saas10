@@ -24,32 +24,32 @@ include '../../header.php';
         <div class="card-label">Your Inputs</div>
         
         <div class="input-group">
-          <label>Current ARR ($)</label>
+          <label>Current ARR ($) <span class="term-tooltip">?<span class="tooltip-text">ARR: Annual Recurring Revenue - your total yearly subscription revenue</span></span></label>
           <input type="number" id="currentArr" value="500000" min="0" max="999999999" step="1">
         </div>
         
         <div class="input-group">
-          <label>ARR Target ($)</label>
+          <label>ARR Target ($) <span class="term-tooltip">?<span class="tooltip-text">ARR Target: The annual revenue goal you want to achieve</span></span></label>
           <input type="number" id="targetArr" value="2000000" min="0" max="999999999" step="1">
         </div>
         
         <div class="input-group">
-          <label>Annual Quota per Rep ($)</label>
+          <label>Annual Quota per Rep ($) <span class="term-tooltip">?<span class="tooltip-text">Quota: The annual revenue target each sales rep is expected to achieve</span></span></label>
           <input type="number" id="quota" value="400000" min="0" max="9999999" step="1">
         </div>
         
         <div class="input-group">
-          <label>Average Quota Attainment (%)</label>
+          <label>Average Quota Attainment (%) <span class="term-tooltip">?<span class="tooltip-text">Quota Attainment: Average percentage of quota that reps actually achieve</span></span></label>
           <input type="number" id="attainment" value="70" min="0" max="200" step="1">
         </div>
         
         <div class="input-group">
-          <label>Ramp Time (months)</label>
+          <label>Ramp Time (months) <span class="term-tooltip">?<span class="tooltip-text">Ramp Time: Number of months for a new rep to become fully productive</span></span></label>
           <input type="number" id="rampTime" value="3" min="0" max="18" step="1">
         </div>
         
         <div class="input-group">
-          <label>Current Sales Reps</label>
+          <label>Current Sales Reps <span class="term-tooltip">?<span class="tooltip-text">Current number of sales representatives on your team</span></span></label>
           <input type="number" id="currentReps" value="2" min="0" max="9999" step="1">
         </div>
 
@@ -68,23 +68,23 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">Rep Economics</div>
             <div class="input-group">
-              <label>Annual OTE per Rep ($)</label>
+              <label>Annual OTE per Rep ($) <span class="term-tooltip">?<span class="tooltip-text">OTE: On-Target Earnings - total compensation including base + expected commission</span></span></label>
               <input type="number" id="ote" value="120000" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Fully-Loaded Cost Multiplier</label>
+              <label>Fully-Loaded Cost Multiplier <span class="term-tooltip">?<span class="tooltip-text">Fully-Loaded Cost: Total cost including base salary, benefits, tools, and management overhead</span></span></label>
               <input type="number" id="costMultiplier" value="1.3" min="1" max="2" step="0.01">
             </div>
             <div class="input-group">
-              <label>Average Deal Size (ACV, $)</label>
+              <label>Average Deal Size (ACV, $) <span class="term-tooltip">?<span class="tooltip-text">ACV: Annual Contract Value - average yearly revenue per customer contract</span></span></label>
               <input type="number" id="dealSize" value="10000" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Avg Sales Cycle (months)</label>
+              <label>Avg Sales Cycle (months) <span class="term-tooltip">?<span class="tooltip-text">Sales Cycle: Average time from first contact to closing a deal</span></span></label>
               <input type="number" id="salesCycle" value="2" min="0" max="24" step="0.1">
             </div>
             <div class="input-group">
-              <label>Win Rate (%)</label>
+              <label>Win Rate (%) <span class="term-tooltip">?<span class="tooltip-text">Win Rate: Percentage of opportunities that result in closed-won deals</span></span></label>
               <input type="number" id="winRate" value="25" min="0" max="100" step="0.1">
             </div>
           </div>
@@ -92,11 +92,11 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">Team Attrition</div>
             <div class="input-group">
-              <label>Annual Rep Attrition (%)</label>
+              <label>Annual Rep Attrition (%) <span class="term-tooltip">?<span class="tooltip-text">Attrition: Percentage of sales reps who leave your company per year</span></span></label>
               <input type="number" id="attrition" value="20" min="0" max="100" step="0.1">
             </div>
             <div class="input-group">
-              <label>Backfill Time (months)</label>
+              <label>Backfill Time (months) <span class="term-tooltip">?<span class="tooltip-text">Backfill Time: Time needed to hire and ramp a replacement for a departed rep</span></span></label>
               <input type="number" id="backfillTime" value="2" min="0" max="12" step="1">
             </div>
           </div>
@@ -104,7 +104,7 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">Hiring Plan</div>
             <div class="input-group">
-              <label>Start Hiring in Month #</label>
+              <label>Start Hiring in Month # <span class="term-tooltip">?<span class="tooltip-text">Month number from now when you plan to start hiring new reps</span></span></label>
               <input type="number" id="hireStart" value="1" min="1" max="24" step="1">
             </div>
             <div class="input-group">
@@ -112,7 +112,7 @@ include '../../header.php';
               <input type="number" id="hireRate" value="1" min="0" max="20" step="1">
             </div>
             <div class="input-group">
-              <label>Hiring Period (months)</label>
+              <label>Hiring Period (months) <span class="term-tooltip">?<span class="tooltip-text">Hiring Period: Total duration of your hiring plan in months</span></span></label>
               <input type="number" id="hirePeriod" value="12" min="1" max="36" step="1">
             </div>
           </div>
@@ -128,7 +128,7 @@ include '../../header.php';
             </div>
             <div class="sdr-inputs" style="display: none;">
               <div class="input-group">
-                <label>SDRs per AE</label>
+                <label>SDRs per AE <span class="term-tooltip">?<span class="tooltip-text">SDR: Sales Development Representative - AE: Account Executive. Ratio defines how many SDRs support each AE</span></span></label>
                 <select id="sdrRatio">
                   <option value="1">1:1</option>
                   <option value="2" selected>1:2</option>
@@ -141,7 +141,7 @@ include '../../header.php';
                 <input type="number" id="sdrOte" value="70000" min="0" max="9999999" step="1">
               </div>
               <div class="input-group">
-                <label>% Pipeline from SDRs</label>
+                <label>% Pipeline from SDRs <span class="term-tooltip">?<span class="tooltip-text">Pipeline: Sales pipeline - the total value of all active sales opportunities</span></span></label>
                 <input type="number" id="sdrPipeline" value="40" min="0" max="100" step="1">
               </div>
             </div>
@@ -176,15 +176,15 @@ include '../../header.php';
 
         <div class="results-grid">
           <div class="result-metric">
-            <div class="label">ARR Gap</div>
+            <div class="label">ARR Gap <span class="term-tooltip">?<span class="tooltip-text">ARR Gap: The difference between your target ARR and current ARR</span></span></div>
             <div class="value" id="arrGap">$1.5M</div>
           </div>
           <div class="result-metric">
-            <div class="label">Effective Quota</div>
+            <div class="label">Effective Quota <span class="term-tooltip">?<span class="tooltip-text">Effective Quota: Annual quota adjusted for expected attainment rate</span></span></div>
             <div class="value" id="effectiveQuota">$280K</div>
           </div>
           <div class="result-metric">
-            <div class="label">Reps Needed</div>
+            <div class="label">Reps Needed <span class="term-tooltip">?<span class="tooltip-text">Reps Needed: Number of reps required to close the ARR gap</span></span></div>
             <div class="value" id="repsNeeded">6</div>
           </div>
           <div class="result-metric">
@@ -195,11 +195,11 @@ include '../../header.php';
 
         <div class="results-row">
           <div class="result-metric">
-            <div class="label">Time to Target</div>
+            <div class="label">Time to Target <span class="term-tooltip">?<span class="tooltip-text">Time to Target: Estimated months to reach ARR target with hiring plan</span></span></div>
             <div class="value" id="timeToTarget">9 months</div>
           </div>
           <div class="result-metric">
-            <div class="label">Sales Payroll Cost</div>
+            <div class="label">Sales Payroll Cost <span class="term-tooltip">?<span class="tooltip-text">Sales Payroll Cost: Total annual cost of sales team including fully-loaded expenses</span></span></div>
             <div class="value" id="payrollCost">$936K/yr</div>
           </div>
         </div>

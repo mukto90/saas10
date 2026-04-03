@@ -58,15 +58,15 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">Global Advanced</div>
             <div class="input-group">
-              <label>MRR Last Month ($)</label>
+              <label>MRR Last Month ($) <span class="term-tooltip">?<span class="tooltip-text">Your MRR from the previous month for calculating growth rate</span></span></label>
               <input type="number" id="mrrLastMonth" value="0" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Annual Plan Discount (%)</label>
+              <label>Annual Plan Discount (%) <span class="term-tooltip">?<span class="tooltip-text">Discount offered for annual vs monthly billing (e.g., 20% for yearly)</span></span></label>
               <input type="number" id="annualDiscount" value="0" min="0" max="100" step="0.1">
             </div>
             <div class="input-group">
-              <label>% Customers on Annual Plans</label>
+              <label>% Customers on Annual Plans <span class="term-tooltip">?<span class="tooltip-text">Percentage of customers on annual billing plans</span></span></label>
               <input type="number" id="annualPercent" value="0" min="0" max="100" step="0.1">
             </div>
           </div>
@@ -95,11 +95,11 @@ include '../../header.php';
         
         <div class="results-grid">
           <div class="result-metric">
-            <div class="label">Total MRR</div>
+            <div class="label">Total MRR <span class="term-tooltip">?<span class="tooltip-text">MRR: Monthly Recurring Revenue - predictable revenue generated each month from subscriptions</span></span></div>
             <div class="value" id="totalMrr">$2,450</div>
           </div>
           <div class="result-metric">
-            <div class="label">Total ARR</div>
+            <div class="label">Total ARR <span class="term-tooltip">?<span class="tooltip-text">ARR: Annual Recurring Revenue - MRR multiplied by 12</span></span></div>
             <div class="value" id="totalArr">$29,400</div>
           </div>
           <div class="result-metric">
@@ -107,7 +107,7 @@ include '../../header.php';
             <div class="value" id="totalCustomers">70</div>
           </div>
           <div class="result-metric">
-            <div class="label">ARPU</div>
+            <div class="label">ARPU <span class="term-tooltip">?<span class="tooltip-text">ARPU: Average Revenue Per User - average monthly revenue per customer</span></span></div>
             <div class="value" id="arpu">$35.00</div>
           </div>
         </div>
@@ -115,27 +115,27 @@ include '../../header.php';
         <div class="advanced-results" style="display: none;">
           <div class="results-row">
             <div class="result-metric">
-              <div class="label">New MRR</div>
+              <div class="label">New MRR <span class="term-tooltip">?<span class="tooltip-text">New MRR: Revenue from new customers acquired this month</span></span></div>
               <div class="value" id="newMrr">$0</div>
             </div>
             <div class="result-metric">
-              <div class="label">Churned MRR</div>
+              <div class="label">Churned MRR <span class="term-tooltip">?<span class="tooltip-text">Churned MRR: Revenue lost from customers who cancelled this month</span></span></div>
               <div class="value" id="churnedMrr">$0</div>
             </div>
           </div>
           <div class="results-row">
             <div class="result-metric">
-              <div class="label">Expansion MRR</div>
+              <div class="label">Expansion MRR <span class="term-tooltip">?<span class="tooltip-text">Expansion MRR: Additional revenue from existing customers through upgrades</span></span></div>
               <div class="value" id="expansionMrr">$0</div>
             </div>
             <div class="result-metric">
-              <div class="label">Net New MRR</div>
+              <div class="label">Net New MRR <span class="term-tooltip">?<span class="tooltip-text">Net New MRR: Total change in MRR from new, churned, and expansion revenue</span></span></div>
               <div class="value" id="netNewMrr">$0</div>
             </div>
           </div>
           <div class="results-row">
             <div class="result-metric" id="growthContainer">
-              <div class="label">MRR Growth Rate <span class="health-badge" id="growthBadge">—</span></div>
+              <div class="label">MRR Growth Rate <span class="health-badge" id="growthBadge">—</span> <span class="term-tooltip">?<span class="tooltip-text">MRR Growth Rate: Percentage increase in monthly recurring revenue compared to last month</span></span></div>
               <div class="value" id="mrrGrowth">—</div>
             </div>
             <div class="result-metric">
@@ -145,11 +145,11 @@ include '../../header.php';
           </div>
           <div class="results-row">
             <div class="result-metric">
-              <div class="label">Revenue Churn Rate</div>
+              <div class="label">Revenue Churn Rate <span class="term-tooltip">?<span class="tooltip-text">Revenue Churn Rate: Percentage of MRR lost from cancellations and downgrades</span></span></div>
               <div class="value" id="revenueChurn">0%</div>
             </div>
             <div class="result-metric">
-              <div class="label">Implied ARR</div>
+              <div class="label">Implied ARR <span class="term-tooltip">?<span class="tooltip-text">Implied ARR: ARR accounting for annual plan discounts</span></span></div>
               <div class="value" id="impliedArr">$0</div>
             </div>
           </div>

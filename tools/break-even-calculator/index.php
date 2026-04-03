@@ -24,22 +24,22 @@ include '../../header.php';
         <div class="card-label">Your Inputs</div>
         
         <div class="input-group">
-          <label>Monthly Fixed Costs ($)</label>
+          <label>Monthly Fixed Costs ($) <span class="term-tooltip">?<span class="tooltip-text">Fixed Costs: Expenses that don't change with customer count (rent, salaries, etc.)</span></span></label>
           <input type="number" id="fixedCosts" value="10000" min="0" max="9999999" step="1">
         </div>
         
         <div class="input-group">
-          <label>Variable Cost per Customer ($)</label>
+          <label>Variable Cost per Customer ($) <span class="term-tooltip">?<span class="tooltip-text">Variable Cost: Costs that scale with each additional customer</span></span></label>
           <input type="number" id="variableCost" value="5" min="0" max="9999999" step="0.01">
         </div>
         
         <div class="input-group">
-          <label>Price per Customer / Month ($)</label>
+          <label>Price per Customer / Month ($) <span class="term-tooltip">?<span class="tooltip-text">Price you charge each customer per month</span></span></label>
           <input type="number" id="pricePerCustomer" value="49" min="0" max="9999999" step="0.01">
         </div>
 
         <div class="input-group">
-          <label>Current Number of Customers</label>
+          <label>Current Number of Customers <span class="term-tooltip">?<span class="tooltip-text">Your existing customer count for current state calculations</span></span></label>
           <input type="number" id="currentCustomers" value="50" min="0" max="9999999" step="1">
         </div>
 
@@ -47,19 +47,19 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">Fixed Cost Breakdown</div>
             <div class="input-group">
-              <label>Salaries ($/mo)</label>
+              <label>Salaries ($/mo) <span class="term-tooltip">?<span class="tooltip-text">Total monthly employee salary costs</span></span></label>
               <input type="number" id="salaries" value="7000" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Infrastructure ($/mo)</label>
+              <label>Infrastructure ($/mo) <span class="term-tooltip">?<span class="tooltip-text">Server, hosting, and technology infrastructure costs</span></span></label>
               <input type="number" id="infrastructure" value="1000" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Marketing ($/mo)</label>
+              <label>Marketing ($/mo) <span class="term-tooltip">?<span class="tooltip-text">Monthly marketing and advertising spend</span></span></label>
               <input type="number" id="marketing" value="1000" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Other Fixed Costs ($/mo)</label>
+              <label>Other Fixed Costs ($/mo) <span class="term-tooltip">?<span class="tooltip-text">Miscellaneous fixed operating expenses</span></span></label>
               <input type="number" id="otherFixed" value="1000" min="0" max="9999999" step="1">
             </div>
             <div class="reconciliation-note" id="fixedReconNote" style="display: none;"></div>
@@ -68,7 +68,7 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">Variable Cost Breakdown</div>
             <div class="input-group">
-              <label>Payment Processing (% of revenue)</label>
+              <label>Payment Processing (% of revenue) <span class="term-tooltip">?<span class="tooltip-text">Fees charged by payment processors (Stripe, PayPal, etc.)</span></span></label>
               <input type="number" id="paymentProcessing" value="2.9" min="0" max="100" step="0.01">
             </div>
             <div class="input-group">

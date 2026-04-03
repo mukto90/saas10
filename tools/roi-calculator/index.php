@@ -24,12 +24,12 @@ include '../../header.php';
         <div class="card-label">Your Inputs</div>
         
         <div class="input-group">
-          <label>Monthly Cost ($)</label>
+          <label>Monthly Cost ($) <span class="term-tooltip">?<span class="tooltip-text">Monthly cost of the investment, tool, or initiative</span></span></label>
           <input type="number" id="monthlyCost" value="500" min="0" max="9999999" step="1">
         </div>
         
         <div class="input-group">
-          <label>Monthly Revenue / Savings ($)</label>
+          <label>Monthly Revenue / Savings ($) <span class="term-tooltip">?<span class="tooltip-text">Monthly benefit from the investment (increased revenue or cost savings)</span></span></label>
           <input type="number" id="monthlyReturn" value="2000" min="0" max="9999999" step="1">
         </div>
         
@@ -47,11 +47,11 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">One-Time Costs</div>
             <div class="input-group">
-              <label>One-Time Setup Cost ($)</label>
+              <label>One-Time Setup Cost ($) <span class="term-tooltip">?<span class="tooltip-text">Initial implementation or setup costs (one-time expenses)</span></span></label>
               <input type="number" id="setupCost" value="0" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Training Cost ($)</label>
+              <label>Training Cost ($) <span class="term-tooltip">?<span class="tooltip-text">Cost of training employees to use the tool or initiative</span></span></label>
               <input type="number" id="trainingCost" value="0" min="0" max="9999999" step="1">
             </div>
           </div>
@@ -59,11 +59,11 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">Growth Assumptions</div>
             <div class="input-group">
-              <label>Monthly Cost Growth (%)</label>
+              <label>Monthly Cost Growth (%) <span class="term-tooltip">?<span class="tooltip-text">Expected month-over-month increase in costs</span></span></label>
               <input type="number" id="costGrowth" value="0" min="-50" max="200" step="0.1">
             </div>
             <div class="input-group">
-              <label>Monthly Return Growth (%)</label>
+              <label>Monthly Return Growth (%) <span class="term-tooltip">?<span class="tooltip-text">Expected month-over-month increase in revenue or savings</span></span></label>
               <input type="number" id="returnGrowth" value="0" min="-50" max="200" step="0.1">
             </div>
           </div>
@@ -71,11 +71,11 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">Financial Adjustments</div>
             <div class="input-group">
-              <label>Tax Rate (%)</label>
+              <label>Tax Rate (%) <span class="term-tooltip">?<span class="tooltip-text">Corporate tax rate applied to profits</span></span></label>
               <input type="number" id="taxRate" value="0" min="0" max="60" step="0.1">
             </div>
             <div class="input-group">
-              <label>Discount Rate (%)</label>
+              <label>Discount Rate (%) <span class="term-tooltip">?<span class="tooltip-text">Rate to calculate present value of future cash flows</span></span></label>
               <input type="number" id="discountRate" value="0" min="0" max="30" step="0.1">
             </div>
           </div>

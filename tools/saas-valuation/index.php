@@ -24,17 +24,17 @@ include '../../header.php';
         <div class="card-label">Your Inputs</div>
         
         <div class="input-group">
-          <label>Current ARR ($)</label>
+          <label>Current ARR ($) <span class="term-tooltip">?<span class="tooltip-text">ARR: Annual Recurring Revenue - your total yearly subscription revenue</span></span></label>
           <input type="number" id="currentArr" value="1000000" min="0" max="999999999" step="1">
         </div>
         
         <div class="input-group">
-          <label>ARR Growth Rate YoY (%)</label>
+          <label>ARR Growth Rate YoY (%) <span class="term-tooltip">?<span class="tooltip-text">Year-over-year growth rate of your Annual Recurring Revenue</span></span></label>
           <input type="number" id="growthRate" value="80" min="0" max="1000" step="0.1">
         </div>
         
         <div class="input-group">
-          <label>Stage</label>
+          <label>Stage <span class="term-tooltip">?<span class="tooltip-text">Company funding stage used to apply appropriate valuation multiples</span></span></label>
           <select id="stage">
             <option value="preseed">Pre-seed</option>
             <option value="seed">Seed</option>
@@ -49,23 +49,23 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">Revenue Quality</div>
             <div class="input-group">
-              <label>Current MRR ($)</label>
+              <label>Current MRR ($) <span class="term-tooltip">?<span class="tooltip-text">MRR: Monthly Recurring Revenue - predictable monthly revenue</span></span></label>
               <input type="number" id="mrr" value="83333" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Net Revenue Retention (%)</label>
+              <label>Net Revenue Retention (%) <span class="term-tooltip">?<span class="tooltip-text">NRR: Revenue retained including expansion minus churn and contraction</span></span></label>
               <input type="number" id="nrr" value="110" min="0" max="200" step="0.1">
             </div>
             <div class="input-group">
-              <label>Gross Margin (%)</label>
+              <label>Gross Margin (%) <span class="term-tooltip">?<span class="tooltip-text">Gross Margin: Percentage of revenue after deducting direct costs</span></span></label>
               <input type="number" id="grossMargin" value="75" min="0" max="100" step="0.1">
             </div>
             <div class="input-group">
-              <label>% Multi-Year Contracts</label>
+              <label>% Multi-Year Contracts <span class="term-tooltip">?<span class="tooltip-text">Percentage of customers on contracts longer than 12 months</span></span></label>
               <input type="number" id="multiYear" value="40" min="0" max="100" step="1">
             </div>
             <div class="input-group">
-              <label>Top Customer % of ARR</label>
+              <label>Top Customer % of ARR <span class="term-tooltip">?<span class="tooltip-text">Revenue concentration - how much of ARR comes from your largest customer</span></span></label>
               <input type="number" id="customerConcentration" value="10" min="0" max="100" step="0.1">
             </div>
           </div>
@@ -73,15 +73,15 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">Profitability</div>
             <div class="input-group">
-              <label>EBITDA Margin (%)</label>
+              <label>EBITDA Margin (%) <span class="term-tooltip">?<span class="tooltip-text">EBITDA: Earnings Before Interest, Taxes, Depreciation, and Amortization</span></span></label>
               <input type="number" id="ebitdaMargin" value="-20" min="-200" max="100" step="0.1">
             </div>
             <div class="input-group">
-              <label>FCF Margin (%)</label>
+              <label>FCF Margin (%) <span class="term-tooltip">?<span class="tooltip-text">FCF: Free Cash Flow - cash remaining after capital expenditures</span></span></label>
               <input type="number" id="fcfMargin" value="-15" min="-200" max="100" step="0.1">
             </div>
             <div class="input-group">
-              <label>Monthly Net Burn ($)</label>
+              <label>Monthly Net Burn ($) <span class="term-tooltip">?<span class="tooltip-text">Net Burn: Monthly cash spent minus revenue (negative = profitable)</span></span></label>
               <input type="number" id="burn" value="80000" min="0" max="9999999" step="1">
             </div>
           </div>
@@ -101,15 +101,15 @@ include '../../header.php';
               <input type="number" id="growthYr3" value="40" min="0" max="500" step="0.1">
             </div>
             <div class="input-group">
-              <label>Terminal Growth Rate (%)</label>
+              <label>Terminal Growth Rate (%) <span class="term-tooltip">?<span class="tooltip-text">Terminal Growth: Long-term sustainable growth rate used in DCF valuation</span></span></label>
               <input type="number" id="terminalGrowth" value="3" min="0" max="10" step="0.1">
             </div>
             <div class="input-group">
-              <label>Discount Rate (%)</label>
+              <label>Discount Rate (%) <span class="term-tooltip">?<span class="tooltip-text">Discount Rate: Rate used to calculate present value of future cash flows</span></span></label>
               <input type="number" id="discountRate" value="25" min="5" max="60" step="0.1">
             </div>
             <div class="input-group">
-              <label>Target EBITDA Margin at Maturity (%)</label>
+              <label>Target EBITDA Margin at Maturity (%) <span class="term-tooltip">?<span class="tooltip-text">Target profitability level when company reaches maturity</span></span></label>
               <input type="number" id="targetEbitdaMargin" value="20" min="0" max="60" step="0.1">
             </div>
           </div>
@@ -118,17 +118,17 @@ include '../../header.php';
             <div class="section-title">Method Weighting</div>
             <div class="weight-group">
               <div class="weight-row">
-                <label>ARR Multiple</label>
+                <label>ARR Multiple <span class="term-tooltip">?<span class="tooltip-text">ARR Multiple: Valuation method using revenue multiples from comparable companies</span></span></label>
                 <input type="range" id="arrWeight" value="60" min="0" max="100" step="5">
                 <span class="weight-value" id="arrWeightVal">60%</span>
               </div>
               <div class="weight-row">
-                <label>DCF</label>
+                <label>DCF <span class="term-tooltip">?<span class="tooltip-text">DCF: Discounted Cash Flow - valuation based on projected future cash flows</span></span></label>
                 <input type="range" id="dcfWeight" value="20" min="0" max="100" step="5">
                 <span class="weight-value" id="dcfWeightVal">20%</span>
               </div>
               <div class="weight-row">
-                <label>Comparable Transactions</label>
+                <label>Comparable Transactions <span class="term-tooltip">?<span class="tooltip-text">Valuation based on recent M&A transactions in similar companies</span></span></label>
                 <input type="range" id="compWeight" value="20" min="0" max="100" step="5">
                 <span class="weight-value" id="compWeightVal">20%</span>
               </div>

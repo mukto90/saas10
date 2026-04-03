@@ -24,22 +24,22 @@ include '../../header.php';
         <div class="card-label">Your Inputs</div>
         
         <div class="input-group">
-          <label>Cost to Serve per Customer / Month ($)</label>
+          <label>Cost to Serve per Customer / Month ($) <span class="term-tooltip">?<span class="tooltip-text">Cost to Serve: Direct costs (infrastructure, support, etc.) per customer per month</span></span></label>
           <input type="number" id="costToServe" value="8" min="0" max="9999999" step="0.01">
         </div>
         
         <div class="input-group">
-          <label>Target Gross Margin (%)</label>
+          <label>Target Gross Margin (%) <span class="term-tooltip">?<span class="tooltip-text">Gross Margin: Percentage of revenue remaining after deducting direct costs</span></span></label>
           <input type="number" id="targetMargin" value="75" min="0" max="100" step="0.1">
         </div>
         
         <div class="input-group">
-          <label>Customer Acquisition Cost ($)</label>
+          <label>Customer Acquisition Cost ($) <span class="term-tooltip">?<span class="tooltip-text">CAC: Total cost to acquire a new customer</span></span></label>
           <input type="number" id="cac" value="200" min="0" max="9999999" step="1">
         </div>
         
         <div class="input-group">
-          <label>Target CAC Payback (months)</label>
+          <label>Target CAC Payback (months) <span class="term-tooltip">?<span class="tooltip-text">CAC Payback: Number of months to recover customer acquisition cost</span></span></label>
           <input type="number" id="paybackMonths" value="12" min="1" max="60" step="1">
         </div>
 
@@ -47,27 +47,27 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">Full Cost Structure</div>
             <div class="input-group">
-              <label>Infrastructure ($/mo/customer)</label>
+              <label>Infrastructure ($/mo/customer) <span class="term-tooltip">?<span class="tooltip-text">Server costs, cloud services, and hosting expenses per customer</span></span></label>
               <input type="number" id="infra" value="3" min="0" max="9999999" step="0.01">
             </div>
             <div class="input-group">
-              <label>Support Cost ($/mo/customer)</label>
+              <label>Support Cost ($/mo/customer) <span class="term-tooltip">?<span class="tooltip-text">Customer support costs allocated per customer per month</span></span></label>
               <input type="number" id="support" value="2" min="0" max="9999999" step="0.01">
             </div>
             <div class="input-group">
-              <label>Payment Processing (%)</label>
+              <label>Payment Processing (%) <span class="term-tooltip">?<span class="tooltip-text">Fees charged by payment processors (e.g., Stripe, PayPal) as percentage of revenue</span></span></label>
               <input type="number" id="payment" value="2.9" min="0" max="10" step="0.01">
             </div>
             <div class="input-group">
-              <label>Other Variable Cost ($/mo)</label>
+              <label>Other Variable Cost ($/mo) <span class="term-tooltip">?<span class="tooltip-text">Additional variable costs like usage-based infrastructure or third-party APIs</span></span></label>
               <input type="number" id="otherVar" value="1" min="0" max="9999999" step="0.01">
             </div>
             <div class="input-group">
-              <label>Total Monthly Fixed Costs ($)</label>
+              <label>Total Monthly Fixed Costs ($) <span class="term-tooltip">?<span class="tooltip-text">Fixed costs that don't change with customer count (rent, salaries, etc.)</span></span></label>
               <input type="number" id="fixedCosts" value="15000" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Expected Customer Count</label>
+              <label>Expected Customer Count <span class="term-tooltip">?<span class="tooltip-text">Projected number of customers at this price point</span></span></label>
               <input type="number" id="expectedCustomers" value="100" min="1" max="9999999" step="1">
             </div>
           </div>
@@ -75,11 +75,11 @@ include '../../header.php';
           <div class="input-section">
             <div class="section-title">Value-Based Pricing</div>
             <div class="input-group">
-              <label>Monthly Value Delivered to Customer ($)</label>
+              <label>Monthly Value Delivered to Customer ($) <span class="term-tooltip">?<span class="tooltip-text">Estimated monetary value your product creates for customers per month</span></span></label>
               <input type="number" id="valueDelivered" value="5000" min="0" max="9999999" step="1">
             </div>
             <div class="input-group">
-              <label>Value Capture Rate (%)</label>
+              <label>Value Capture Rate (%) <span class="term-tooltip">?<span class="tooltip-text">Percentage of customer value you capture in your pricing</span></span></label>
               <input type="number" id="captureRate" value="10" min="1" max="50" step="0.1">
             </div>
             <p class="note">SaaS products typically capture 5–20% of the value they deliver.</p>

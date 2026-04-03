@@ -137,26 +137,26 @@ include '../../header.php';
         
         <div class="summary-grid">
           <div class="summary-metric">
-            <div class="label">Avg M1 Retention</div>
+            <div class="label">Avg M1 Retention <span class="term-tooltip">?<span class="tooltip-text">M1 Retention: Percentage of customers still active 1 month after acquisition</span></span></div>
             <div class="value" id="avgM1">80.0%</div>
           </div>
           <div class="summary-metric">
-            <div class="label">Avg M3 Retention</div>
+            <div class="label">Avg M3 Retention <span class="term-tooltip">?<span class="tooltip-text">M3 Retention: Percentage of customers still active 3 months after acquisition</span></span></div>
             <div class="value" id="avgM3">60.7%</div>
           </div>
           <div class="summary-metric">
-            <div class="label">Avg M6 Retention</div>
+            <div class="label">Avg M6 Retention <span class="term-tooltip">?<span class="tooltip-text">M6 Retention: Percentage of customers still active 6 months after acquisition</span></span></div>
             <div class="value" id="avgM6">50.0%</div>
           </div>
           <div class="summary-metric">
-            <div class="label">Avg M12 Retention</div>
+            <div class="label">Avg M12 Retention <span class="term-tooltip">?<span class="tooltip-text">M12 Retention: Percentage of customers still active 12 months after acquisition</span></span></div>
             <div class="value" id="avgM12">—</div>
           </div>
         </div>
         
         <div class="summary-row">
           <div class="summary-metric">
-            <div class="label">Best Cohort</div>
+            <div class="label">Best Cohort <span class="term-tooltip">?<span class="tooltip-text">Cohort: A group of customers acquired in the same time period (e.g., same month)</span></span></div>
             <div class="value" id="bestCohort">Mar 2024</div>
           </div>
           <div class="summary-metric">
@@ -164,7 +164,7 @@ include '../../header.php';
             <div class="value" id="worstCohort">Jan 2024</div>
           </div>
           <div class="summary-metric">
-            <div class="label">Retention Trend</div>
+            <div class="label">Retention Trend <span class="term-tooltip">?<span class="tooltip-text">Retention Trend: Shows whether retention is improving or declining across cohorts</span></span></div>
             <div class="value" id="retentionTrend">Improving +4%</div>
           </div>
         </div>
