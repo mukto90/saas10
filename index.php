@@ -394,7 +394,7 @@ include 'header.php';
         </div>
         <div class="tool-name">SaaS Idea Validator</div>
         <div class="tool-desc">Score your idea against market demand, competition, and monetization before you build.</div>
-        <div class="tool-url">saas10.xyz</div>
+        <div class="tool-url">SaaS10.xyz</div>
         <span class="tool-arrow">↗</span>
       </a>
 
@@ -405,7 +405,7 @@ include 'header.php';
         </div>
         <div class="tool-name">Cold Email Generator</div>
         <div class="tool-desc">AI-written cold outreach for SaaS. Personalized, direct, and worth replying to.</div>
-        <div class="tool-url">saas10.xyz</div>
+        <div class="tool-url">SaaS10.xyz</div>
         <span class="tool-arrow">↗</span>
       </a>
 

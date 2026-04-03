@@ -46,7 +46,7 @@ $curl_err  = curl_error($ch);
 curl_close($ch);
 
 if ($curl_err) {
-    error_log('saas10 signup curl error: ' . $curl_err);
+    error_log('SaaS10 signup curl error: ' . $curl_err);
     echo json_encode(['success' => false, 'message' => 'Could not connect to subscription service. Please try again.']);
     exit;
 }
@@ -54,6 +54,6 @@ if ($curl_err) {
 if ($http_code >= 200 && $http_code < 300) {
     echo json_encode(['success' => true, 'message' => 'Subscribed successfully.']);
 } else {
-    error_log('saas10 signup HTTP ' . $http_code . ': ' . $response);
+    error_log('SaaS10 signup HTTP ' . $http_code . ': ' . $response);
     echo json_encode(['success' => false, 'message' => 'Subscription failed. Please try again later.']);
 }

@@ -34,7 +34,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 $to      = 'n.mukto@gmail.com';
 $subject = 'New Tool Idea: ' . $title;
 $headers = implode("\r\n", [
-    'From: saas10 Ideas <ideas@saas10.xyz>',
+    'From: SaaS10 Ideas <ideas@saas10.xyz>',
     'Reply-To: ' . $name . ' <' . $email . '>',
     'Content-Type: text/html; charset=UTF-8',
     'MIME-Version: 1.0',
@@ -48,7 +48,7 @@ $body = '
 <body style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background:#f5f5f5;padding:20px;">
   <div style="background:#0a0a0a;border-radius:12px;padding:32px;color:#f0ede8;">
     <h2 style="margin:0 0 8px;font-size:22px;color:#c8f060;">New Tool Idea Submitted</h2>
-    <p style="color:#888580;margin:0 0 24px;font-size:14px;">saas10.xyz idea submission</p>
+    <p style="color:#888580;margin:0 0 24px;font-size:14px;">SaaS10.xyz idea submission</p>
 
     <table style="width:100%;border-collapse:collapse;">
       <tr>
@@ -77,6 +77,6 @@ $sent = mail($to, $subject, $body, $headers);
 if ($sent) {
     echo json_encode(['success' => true, 'message' => 'Idea submitted successfully.']);
 } else {
-    error_log('saas10 submit-idea mail() failed for: ' . $email);
+    error_log('SaaS10 submit-idea mail() failed for: ' . $email);
     echo json_encode(['success' => false, 'message' => 'Failed to send. Please try emailing us directly.']);
 }

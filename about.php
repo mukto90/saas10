@@ -1,6 +1,6 @@
 <?php
 $page_title = 'About';
-$page_desc = 'Learn about saas10 — free micro-tools for SaaS founders, marketers, and operators.';
+$page_desc = 'Learn about SaaS10 — free micro-tools for SaaS founders, marketers, and operators.';
 include 'header.php';
 ?>
 
@@ -120,7 +120,7 @@ include 'header.php';
 
 <div class="wrap">
   <section class="about-hero">
-    <h1>About <em>saas10</em></h1>
+    <h1>About <em>SaaS10</em></h1>
     <p class="about-sub">We're building free micro-tools for SaaS founders, marketers, and operators. No login. No fluff. Just tools that work.</p>
   </section>
 </div>
@@ -130,7 +130,7 @@ include 'header.php';
     <div class="about-grid">
       <div class="about-card">
         <h3>🎯 Our Mission</h3>
-        <p>We believe great tools shouldn't require a credit card or an account. Every tool on saas10 is free, instant, and works right in your browser.</p>
+        <p>We believe great tools shouldn't require a credit card or an account. Every tool on SaaS10 is free, instant, and works right in your browser.</p>
       </div>
       <div class="about-card">
         <h3>🚀 Built for Speed</h3>
