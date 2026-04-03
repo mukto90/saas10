@@ -37,6 +37,8 @@ curl_setopt_array($ch, [
     CURLOPT_HTTPHEADER     => [
         'Content-Type: application/x-www-form-urlencoded',
         'Accept: application/json',
+        'User-Agent: Mozilla/5.0 (compatible; SaaS10/1.0)',
+        'Referer: https://saas10.xyz/',
     ],
 ]);
 
