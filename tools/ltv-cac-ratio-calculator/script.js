@@ -1,8 +1,5 @@
-const CURRENCY_SYMBOLS = {
-  USD: '$', EUR: '€', GBP: '£', BDT: '৳', INR: '₹', CAD: 'C$', AUD: 'A$', SGD: 'S$'
-};
-
-const CHANNEL_COLORS = ['#c8f060', '#60d4f0', '#a082f0', '#f0a050'];
+var CURRENCY_SYMBOLS = CURRENCY_SYMBOLS || {};
+var CHANNEL_COLORS = ['#c8f060', '#60d4f0', '#a082f0', '#f0a050'];
 
 let mode = 'simple';
 let channelCount = 1;

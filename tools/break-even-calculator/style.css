@@ -1,40 +1,3 @@
-.tool-page { padding: 3rem 0; }
-.back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); text-decoration: none; font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem; transition: color 0.2s; }
-.back-link:hover { color: var(--text); }
-.page-header { margin-bottom: 2rem; }
-.page-header h1 { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
-.page-header p { color: var(--muted); font-size: 1.05rem; }
-
-.mode-toggle { display: flex; gap: 8px; margin-bottom: 1.5rem; }
-.mode-btn {
-  background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
-  padding: 8px 20px; font-family: var(--font); font-size: 0.85rem; font-weight: 600;
-  color: var(--muted); cursor: pointer; transition: all 0.2s;
-}
-.mode-btn:hover { border-color: var(--border-hover); color: var(--text); }
-.mode-btn.active { background: var(--accent); color: #0a0a0a; border-color: var(--accent); }
-
-.tool-grid { display: grid; grid-template-columns: 45fr 55fr; gap: 2rem; align-items: start; }
-@media (max-width: 768px) { .tool-grid { grid-template-columns: 1fr; } }
-
-.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; }
-.card-label { font-family: var(--mono); font-size: 0.7rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1.5rem; }
-
-.input-group { margin-bottom: 1.5rem; }
-.input-group label { display: block; font-family: var(--mono); font-size: 0.75rem; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 8px; }
-.input-group input[type="number"],
-.input-group select {
-  width: 100%; background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
-  padding: 14px 16px; font-family: var(--mono); font-size: 1.1rem; color: var(--text);
-  text-align: right; outline: none; transition: border-color 0.2s;
-}
-.input-group select { text-align: left; }
-.input-group input[type="number"]:focus,
-.input-group select:focus { border-color: rgba(200,240,96,0.4); }
-
-.input-section { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
-.input-section .section-title { font-family: var(--mono); font-size: 0.7rem; color: var(--accent2); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1rem; }
-
 .reconciliation-note {
   margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; font-size: 0.8rem;
   background: rgba(240,192,96,0.1); border: 1px solid rgba(240,192,96,0.2); color: #f0c060;
@@ -59,26 +22,6 @@
   background: rgba(240,192,96,0.1); border: 1px solid rgba(240,192,96,0.2); color: #f0c060;
 }
 
-.results-card { background: var(--bg); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; }
-.results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-.results-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
-.result-metric { margin-bottom: 1rem; }
-.result-metric .label { font-family: var(--mono); font-size: 0.7rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px; display: flex; align-items: center; gap: 8px; }
-.result-metric .value { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em; }
-.result-metric.highlight .value { color: var(--accent); }
-.result-metric.negative .value { color: #f05050; }
-.result-metric.positive .value { color: var(--accent); }
-.result-metric .sub { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
-
-.health-badge {
-  font-size: 0.65rem; padding: 2px 8px; border-radius: 10px; font-weight: 500; letter-spacing: 0.02em;
-}
-.health-badge.profitable { background: rgba(200,240,96,0.2); color: #c8f060; }
-.health-badge.almost { background: rgba(160,208,96,0.2); color: #a0d060; }
-.health-badge.growing { background: rgba(240,192,96,0.2); color: #f0c060; }
-.health-badge.stage { background: rgba(240,160,64,0.2); color: #f0a040; }
-.health-badge.unviable { background: rgba(240,80,80,0.2); color: #f05050; }
-
 .feedback-line {
   margin-top: 1.5rem; padding: 1rem; border-radius: 8px; font-size: 0.9rem; line-height: 1.5;
   background: rgba(255,255,255,0.03); border: 1px solid var(--border);
@@ -102,63 +45,3 @@
 .scenario-metric { margin-bottom: 0.75rem; }
 .scenario-metric .label { font-family: var(--mono); font-size: 0.65rem; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; }
 .scenario-metric .value { font-size: 1.3rem; font-weight: 800; }
-
-.share-section { display: flex; gap: 1rem; margin-top: 1.5rem; }
-.share-section .btn-ghost { flex: 1; text-align: center; }
-
-.explanation { margin-top: 2rem; }
-.explanation-toggle {
-  display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
-  font-family: var(--mono); font-size: 0.8rem; color: var(--muted);
-  background: none; border: none; padding: 0; transition: color 0.2s;
-}
-.explanation-toggle:hover { color: var(--text); }
-.explanation-toggle .arrow { transition: transform 0.2s; }
-.explanation-toggle.open .arrow { transform: rotate(90deg); }
-.explanation-content {
-  display: none; margin-top: 1rem; padding: 1.25rem;
-  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
-  font-size: 0.9rem; line-height: 1.7; color: var(--muted);
-}
-.explanation-content.open { display: block; }
-.explanation-content p { margin-bottom: 0.5rem; }
-
-.term-tooltip {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: var(--border);
-  color: var(--muted);
-  font-size: 0.65rem;
-  font-weight: 600;
-  cursor: help;
-  margin-left: 4px;
-  position: relative;
-}
-.term-tooltip:hover { background: var(--accent); color: #0a0a0a; }
-.term-tooltip .tooltip-text {
-  display: none;
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 10px 14px;
-  font-size: 0.8rem;
-  font-weight: 400;
-  color: var(--text);
-  white-space: nowrap;
-  z-index: 100;
-  margin-bottom: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  line-height: 1.4;
-}
-.term-tooltip:hover .tooltip-text { display: block; }
-
-.result-metric .label { display: flex; align-items: center; }
-.input-group label { display: flex; align-items: center; }

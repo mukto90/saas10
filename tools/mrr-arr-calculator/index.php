@@ -3,6 +3,7 @@ $page_title = 'MRR / ARR Calculator';
 $page_desc  = 'Calculate MRR, ARR, and revenue metrics across pricing tiers.';
 include '../../header.php';
 ?>
+<link rel="stylesheet" href="../../assets/css/tools.css">
 <link rel="stylesheet" href="style.css">
 
 <div class="tool-page">
@@ -225,8 +226,9 @@ include '../../header.php';
   </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/chart.min.js"></script>
+<script src="../../assets/js/tools.js"></script>
 <script src="script.js"></script>
 
 <?php include '../../footer.php'; ?>

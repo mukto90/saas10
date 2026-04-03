@@ -1,7 +1,3 @@
-const CURRENCY_SYMBOLS = {
-  USD: '$', EUR: '€', GBP: '£', BDT: '৳', INR: '₹', CAD: 'C$', AUD: 'A$', SGD: 'S$'
-};
-
 const TIER_COLORS = ['#c8f060', '#60d4f0', '#a082f0'];
 
 let mode = 'simple';

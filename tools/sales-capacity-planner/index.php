@@ -3,6 +3,7 @@ $page_title = 'Sales Capacity Planner';
 $page_desc  = 'Determine how many salespeople you need to hit your ARR target.';
 include '../../header.php';
 ?>
+<link rel="stylesheet" href="../../assets/css/tools.css">
 <link rel="stylesheet" href="style.css">
 
 <div class="tool-page">
@@ -300,7 +301,8 @@ include '../../header.php';
   </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/tools.js"></script>
 <script src="script.js"></script>
 
 <?php include '../../footer.php'; ?>
