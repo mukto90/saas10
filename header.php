@@ -52,6 +52,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <ul>
                 <li><a href="/tools/sales-capacity-planner/">Sales Capacity Planner</a><span>Plan rep capacity and coverage</span></li>
                 <li><a href="/tools/revenue-per-employee/">Revenue per Employee</a><span>Measure sales team efficiency</span></li>
+                <li><a href="/tools/sales-pipeline-calculator/">Sales Pipeline Calculator</a><span>Calculate pipeline needed to hit targets</span></li>
+                <li><a href="/tools/sales-compensation-calculator/">Sales Compensation</a><span>Design comp plans for your team</span></li>
               </ul>
             </div>
             <div class="mega-col">
@@ -65,6 +67,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <h4>Finance</h4>
               <ul>
                 <li><a href="/tools/runway-calculator/">Runway Calculator</a><span>Track cash runway</span></li>
+                <li><a href="/tools/burn-rate-calculator/">Burn Rate Calculator</a><span>Track monthly burn</span></li>
                 <li><a href="/tools/mrr-arr-calculator/">MRR/ARR Calculator</a><span>Project recurring revenue</span></li>
                 <li><a href="/tools/break-even-calculator/">Break-even Calculator</a><span>Find profitability point</span></li>
               </ul>
@@ -79,6 +82,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <h4>Metrics</h4>
               <ul>
                 <li><a href="/tools/ltv-cac-ratio-calculator/">LTV:CAC Ratio</a><span>Customer lifetime value ratio</span></li>
+                <li><a href="/tools/cac-payback-calculator/">CAC Payback</a><span>Months to recover CAC</span></li>
+                <li><a href="/tools/nrr-calculator/">NRR</a><span>Net Revenue Retention</span></li>
                 <li><a href="/tools/churn-rate-calculator/">Churn Rate Calculator</a><span>Track customer loss</span></li>
                 <li><a href="/tools/cohort-retention/">Cohort Retention</a><span>Analyze retention by cohort</span></li>
               </ul>

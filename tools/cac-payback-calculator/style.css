@@ -1,0 +1,14 @@
+.scenario-comparison { margin-top: 1.5rem; }
+.scenario-comparison .scenario-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+@media (max-width: 768px) { .scenario-comparison .scenario-grid { grid-template-columns: 1fr; } }
+.scenario-comparison .scenario-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 1.25rem; text-align: center;
+}
+.scenario-comparison .scenario-title {
+  font-family: var(--mono); font-size: 0.7rem; color: var(--muted);
+  letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.5rem;
+}
+.scenario-comparison .scenario-value {
+  font-size: 1.4rem; font-weight: 800; color: var(--accent);
+}
