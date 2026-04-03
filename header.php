@@ -31,7 +31,67 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="/#tools" <?php echo $current_page === 'index' ? 'class="active"' : ''; ?>>Tools</a></li>
+      <li class="nav-has-mega">
+        <a href="/#tools" <?php echo $current_page === 'index' ? 'class="active"' : ''; ?>>Tools</a>
+        <div class="mega-menu">
+          <div class="mega-inner">
+            <div class="mega-col">
+              <h4>Pricing</h4>
+              <ul>
+                <li><a href="/tools/saas-pricing-calculator/">SaaS Pricing Calculator</a><span>Set optimal prices with value-based tiers</span></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>Valuation</h4>
+              <ul>
+                <li><a href="/tools/saas-valuation/">SaaS Valuation</a><span>Estimate your company's worth</span></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>Sales</h4>
+              <ul>
+                <li><a href="/tools/sales-capacity-planner/">Sales Capacity Planner</a><span>Plan rep capacity and coverage</span></li>
+                <li><a href="/tools/revenue-per-employee/">Revenue per Employee</a><span>Measure sales team efficiency</span></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>Growth</h4>
+              <ul>
+                <li><a href="/tools/roi-calculator/">ROI Calculator</a><span>Measure return on investment</span></li>
+                <li><a href="/tools/rule-of-40/">Rule of 40</a><span>Balance growth and profitability</span></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>Finance</h4>
+              <ul>
+                <li><a href="/tools/runway-calculator/">Runway Calculator</a><span>Track cash runway</span></li>
+                <li><a href="/tools/mrr-arr-calculator/">MRR/ARR Calculator</a><span>Project recurring revenue</span></li>
+                <li><a href="/tools/break-even-calculator/">Break-even Calculator</a><span>Find profitability point</span></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>Pricing Strategy</h4>
+              <ul>
+                <li><a href="/tools/price-increase-simulator/">Price Increase Simulator</a><span>Model price change impact</span></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>Metrics</h4>
+              <ul>
+                <li><a href="/tools/ltv-cac-ratio-calculator/">LTV:CAC Ratio</a><span>Customer lifetime value ratio</span></li>
+                <li><a href="/tools/churn-rate-calculator/">Churn Rate Calculator</a><span>Track customer loss</span></li>
+                <li><a href="/tools/cohort-retention/">Cohort Retention</a><span>Analyze retention by cohort</span></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>Fundraising</h4>
+              <ul>
+                <li><a href="/tools/fundraising-calculator/">Fundraising Calculator</a><span>Plan funding rounds</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
       <li><a href="/about.php">About</a></li>
       <li><a href="#" onclick="openIdeaPopup(); return false;" class="btn-nav">Submit an Idea</a></li>
     </ul>
