@@ -1,6 +1,6 @@
 <?php
 $page_title = 'MRR / ARR Calculator';
-$page_desc  = 'Calculate MRR, ARR, and revenue metrics across pricing tiers.';
+$page_desc  = 'Calculate MRR, ARR, ARPU, and revenue metrics across multiple pricing tiers. Track growth rate and revenue mix.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

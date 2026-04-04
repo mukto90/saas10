@@ -1,6 +1,6 @@
 <?php
 $page_title = 'SaaS Valuation Calculator';
-$page_desc  = 'Estimate your SaaS company value using ARR multiples, DCF, and comparable transactions.';
+$page_desc  = 'Estimate your SaaS company worth using ARR multiples, DCF, and comparable transactions. Get a valuation range with NRR and margin adjustments.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Runway Calculator';
-$page_desc  = 'Calculate how many months of cash runway your SaaS has left.';
+$page_desc  = 'Calculate how many months of cash runway your SaaS has left. Model revenue growth, planned hires, and funding triggers.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

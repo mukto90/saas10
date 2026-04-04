@@ -1,6 +1,6 @@
 <?php
 $page_title = 'LTV:CAC Ratio Calculator';
-$page_desc  = 'Calculate your LTV:CAC ratio to determine if customer acquisition is sustainable.';
+$page_desc  = 'Calculate LTV, CAC, and their ratio to determine if customer acquisition is sustainable. See payback period and channel-level CAC breakdown.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

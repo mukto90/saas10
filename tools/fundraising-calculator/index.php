@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Fundraising Calculator';
-$page_desc  = 'Calculate valuation, dilution, and ownership for your next funding round.';
+$page_desc  = 'Calculate valuation, dilution, and founder ownership for your next funding round. Model SAFE notes, option pools, and cap table changes.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

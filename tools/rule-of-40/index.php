@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Rule of 40 Calculator';
-$page_desc  = 'Measure the balance between growth and profitability for your SaaS.';
+$page_desc  = 'Measure the balance between growth and profitability for your SaaS business. Score above 40 signals a healthy company.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

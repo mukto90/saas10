@@ -1,6 +1,6 @@
 <?php
 $page_title = 'SaaS Pricing Calculator';
-$page_desc  = 'Find the optimal price point for your SaaS product based on costs, margins, and value.';
+$page_desc  = 'Find the optimal price point for your SaaS product using cost-plus, value-based, and competitive pricing methods. Get recommended price ranges.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

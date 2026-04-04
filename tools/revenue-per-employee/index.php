@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Revenue Per Employee Calculator';
-$page_desc  = 'Measure team efficiency and benchmark against top SaaS companies.';
+$page_desc  = 'Measure team efficiency by calculating revenue per employee. Benchmark against top SaaS companies like Shopify, Atlassian, and HubSpot.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

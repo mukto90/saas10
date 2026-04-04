@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Burn Rate Calculator';
-$page_desc  = 'Calculate your monthly burn rate and runway.';
+$page_desc  = 'Calculate monthly gross and net burn rate. See runway in months and model scenarios with different expense and revenue assumptions.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

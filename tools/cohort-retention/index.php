@@ -1,6 +1,6 @@
 <?php
-$page_title = 'Cohort Retention';
-$page_desc  = 'Track and visualize customer retention across cohorts.';
+$page_title = 'Cohort Retention Table';
+$page_desc  = 'Track and visualize customer retention across cohorts. Build heatmap grids, see retention curves, and benchmark against SaaS industry standards.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

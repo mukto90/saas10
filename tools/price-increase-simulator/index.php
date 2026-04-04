@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Price Increase Simulator';
-$page_desc  = 'Model the financial impact of raising your SaaS prices.';
+$page_desc  = 'Model the financial impact of raising your SaaS prices. Calculate break-even churn rate and see exactly how much churn you can absorb.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

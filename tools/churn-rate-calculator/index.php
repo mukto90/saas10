@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Churn Rate Calculator';
-$page_desc  = 'Calculate customer and revenue churn rates with 12-month projections.';
+$page_desc  = 'Calculate customer and revenue churn rates with 12-month projections. See compound impact of churn on your customer base and MRR.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

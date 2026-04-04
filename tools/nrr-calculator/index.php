@@ -1,6 +1,6 @@
 <?php
 $page_title = 'NRR Calculator';
-$page_desc  = 'Calculate Net Revenue Retention (NRR) — the SaaS metric that matters most for valuation.';
+$page_desc  = 'Calculate Net Revenue Retention (NRR) and Gross Revenue Retention (GRR). The SaaS metric that matters most for valuation and investor readiness.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

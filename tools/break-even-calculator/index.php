@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Break-Even Calculator';
-$page_desc  = 'Calculate how many customers you need to cover all costs.';
+$page_desc  = 'Calculate how many customers you need to cover all fixed and variable costs. Find your break-even point and contribution margin.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

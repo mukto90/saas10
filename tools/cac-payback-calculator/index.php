@@ -1,6 +1,6 @@
 <?php
 $page_title = 'CAC Payback Calculator';
-$page_desc  = 'Calculate how long it takes to recover the cost of acquiring a customer.';
+$page_desc  = 'Calculate how many months it takes to recover customer acquisition costs. See payback by pricing tier and model pricing change impacts.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

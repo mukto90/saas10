@@ -1,6 +1,6 @@
 <?php
 $page_title = 'ROI Calculator';
-$page_desc  = 'Calculate ROI for any SaaS tool or business spend with projections.';
+$page_desc  = 'Calculate return on investment for any SaaS tool or business initiative. See payback period, NPV, and 12-month projections.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

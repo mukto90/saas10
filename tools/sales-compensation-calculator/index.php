@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Sales Compensation Calculator';
-$page_desc  = 'Design and model sales compensation plans for your team.';
+$page_desc  = 'Calculate OTE, base salary, commission structures, and quota targets. Model fixed, tiered, or draw compensation plans for your sales team.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

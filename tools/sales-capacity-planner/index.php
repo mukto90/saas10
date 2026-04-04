@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Sales Capacity Planner';
-$page_desc  = 'Determine how many salespeople you need to hit your ARR target.';
+$page_desc  = 'Determine how many salespeople you need to hit your ARR target. Model ramp curves, attrition, hiring plans, and team cost efficiency.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">

@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Sales Pipeline Calculator';
-$page_desc  = 'Calculate the sales pipeline needed to hit your revenue targets.';
+$page_desc  = 'Calculate how much pipeline you need to hit your revenue targets. Model lead-to-close conversion rates and identify funnel bottlenecks.';
 include '../../header.php';
 ?>
 <link rel="stylesheet" href="../../assets/css/tools.css">
