@@ -31,7 +31,7 @@
 .month-col .cell-value { font-family: var(--mono); font-size: 0.75rem; color: #c8f060; }
 .month-col input {
   width: 100%; background: transparent; border: none; border-radius: 0;
-  padding: 6px 2px; font-family: var(--mono); font-size: 0.75rem; color: var(--text);
+  font-family: var(--mono); font-size: 0.75rem; color: var(--text);
   text-align: center; outline: none;
 }
 .month-col input:focus { background: rgba(200,240,96,0.1); }

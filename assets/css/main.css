@@ -5,8 +5,8 @@
   --surface2: #161616;
   --border: rgba(255,255,255,0.08);
   --border-hover: rgba(255,255,255,0.18);
-  --text: #f0ede8;
-  --muted: #888580;
+  --text: #eae9e8;
+  --muted: #a8a8a8;
   --accent: #c8f060;
   --accent2: #60d4f0;
   --font: 'Syne', sans-serif;
@@ -46,7 +46,6 @@ nav {
   letter-spacing: -0.02em;
   text-decoration: none;
   color: var(--text);
-  display: flex;
   align-items: center;
   gap: 7px;
 }
