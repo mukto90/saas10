@@ -11,3 +11,6 @@
 
 # Redirect /tools to main index
 RedirectMatch 302 ^/tools/?$ /
+
+# Custom 404 error
+ErrorDocument 404 /404.php
