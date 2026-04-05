@@ -8,3 +8,6 @@
     Order allow,deny
     Deny from all
 </FilesMatch>
+
+# Redirect /tools to main index
+RedirectMatch 302 ^/tools/?$ /
